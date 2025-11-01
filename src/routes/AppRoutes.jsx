@@ -21,7 +21,7 @@ import ManageCars from "../pages/adminpages/Manage Bookings/ManageCars";
 import ManageBookings from "../pages/adminpages/Manage Cars/ManageBookings";
 import ManageUsers from "../pages/adminpages/ManageUsers/ManageUsers";
 import UpdateCar from "../pages/adminpages/UpdateCar/UpdateCar";
-import AdminLogin from "../pages/authpages/admin/adminLogin";
+import AdminLogin from "../pages/authpages/admin/AdminLogin";
 
 
 // ─── Router Setup ─────────────────────────────────────────────────────────
