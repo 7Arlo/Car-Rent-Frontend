@@ -71,7 +71,7 @@ export default function ManageCars() {
                   <td className="px-4 py-2">{car.brand}</td>
                   <td className="px-4 py-2">
                     <span className="px-2 py-1 text-sm bg-sky-100 text-sky-800 rounded-md dark:bg-sky-900 dark:text-sky-200">
-                      {car.category?.name || "N/A"}
+                      {car.category || "N/A"}
                     </span>
                   </td>
                   <td className="px-4 py-2 font-semibold text-gray-700 dark:text-gray-300">

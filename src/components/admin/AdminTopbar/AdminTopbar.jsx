@@ -1,13 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import DarkModeToggle from "../../user/header/DarkModeToggle";
 
-
 export default function AdminTopbar() {
   const navigate = useNavigate();
 
   const handleLogout = () => {
     localStorage.removeItem("admin");
     navigate("/admin/login");
+  };
+
+  const goHome = () => {
+    navigate("/");
   };
 
   return (
@@ -17,7 +20,15 @@ export default function AdminTopbar() {
       </h2>
 
       <div className="flex items-center space-x-4">
+        <button
+          onClick={goHome}
+          className="px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
+        >
+          Home
+        </button>
+
         <DarkModeToggle />
+
         <button
           onClick={handleLogout}
           className="px-4 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition"
