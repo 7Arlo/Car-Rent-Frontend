@@ -13,7 +13,7 @@ import PaymentFailed from "../components/user/payment/PaymentFailed";
 import ConfirmBooking from "../components/user/booking/ConfirmBooking";
 import BookingHistory from "../pages/userPages/CustomerProfile/BookingHistory";
 import ProtectedRoute from "./ProtectedRoute";
-import AdminLogin from "../pages/authpages/admin/adminLogin";
+
 import AdminLayout from "../layouts/adminLayout/AdminLayout";
 import Dashboard from "../pages/adminpages/Dashboard/Dashboard";
 import AddCar from "../pages/adminpages/Add Car/AddCar";
@@ -21,6 +21,7 @@ import ManageCars from "../pages/adminpages/Manage Bookings/ManageCars";
 import ManageBookings from "../pages/adminpages/Manage Cars/ManageBookings";
 import ManageUsers from "../pages/adminpages/ManageUsers/ManageUsers";
 import UpdateCar from "../pages/adminpages/UpdateCar/UpdateCar";
+import AdminLogin from "../pages/authpages/admin/adminLogin";
 
 
 // ─── Router Setup ─────────────────────────────────────────────────────────
@@ -51,7 +52,7 @@ const router = createBrowserRouter([
 {
     path: "/admin",
     children: [
-      { path: "login", element: <AdminLogin /> },
+      { path: "login", element: <AdminLogin/> },
       {
         element: <AdminLayout />,
         children: [
